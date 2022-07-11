@@ -10,9 +10,7 @@ const ArticlePage = ({article}) => {
       <div>This is article {article.id}</div>
       <h3>{article.title}</h3>
       <p>{article.body}</p>
-      <button>
-        <Link href='/blog'>Back</Link>
-      </button>
+      <Link href='/blog'>Back</Link>
     </>
   )
 }
