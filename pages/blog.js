@@ -1,5 +1,5 @@
 import React from 'react'
-// import styles from '../styles/Article.module.css'
+import styles from '../styles/Article.module.css'
 import Article from '../components/Article'
 
 const blog = ({articles}) => {
@@ -7,9 +7,11 @@ const blog = ({articles}) => {
   return (
     <>
       <h2>Fetch Staging Area</h2>
-      {articles.map(article => 
-        <Article key={article.id} article={article}/>
-      )}
+      <div className={styles.grid}>
+        {articles.map(article => 
+          <Article key={article.id} article={article}/>
+        )}
+      </div>
     </>
   )
 }
@@ -27,8 +29,3 @@ export const getStaticProps = async () => {
     }
   }
 }
-
-
-// getStaticProps //fetch at build time
-// getserversideprops //fetch at client-side call
-// getstaticPaths //dynamically generate paths based on fetched data
