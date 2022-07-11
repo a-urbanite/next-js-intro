@@ -1,0 +1,16 @@
+.nav {
+  background-color: black;
+  color: white;
+  /* text-decoration: none; */
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.item {
+  /* margin-left: 4rem; */
+  margin-right: 2rem;
+}
