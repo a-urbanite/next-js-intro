@@ -1,6 +1,6 @@
 import Head from 'next/head'
 // import Image from 'next/image'
-// import styles from '../styles/Layout.module.css'
+import styles from '../styles/Layout.module.css'
 
 export default function Home() {
   return (
@@ -8,9 +8,10 @@ export default function Home() {
       <Head>
         <title>Next JS stuffff</title>
       </Head>
-      <div >
-        Welcome to Next JS!
-      </div>
+      <p>Welcome to Next JS! Create a new Next JS App with:</p>
+      <p className={styles.code}>
+      npx create-next-app name
+      </p>
     </>
   )
 }
