@@ -10,30 +10,16 @@ const ArticlePage = ({article}) => {
       <div>This is article {article.id}</div>
       <h3>{article.title}</h3>
       <p>{article.body}</p>
-      <Link href='/blog'>Back</Link>
+      <Link href='/blog-SSG'>Back</Link>
     </>
   )
 }
 
 export default ArticlePage
 
-// export const getServerSideProps = async (context) => {
-
-//   console.log("CONTEXT OBJECT:",context)
-
-//   const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${context.params.id}`)
-//   const article = await res.json()
-
-//   return {
-//     props: {
-//       article
-//     }
-//   }
-// }
-
 export const getStaticProps = async (context) => {
 
-  console.log("CONTEXT OBJECT:",context)
+  // console.log("CONTEXT OBJECT:",context)
 
   const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${context.params.id}`)
   const article = await res.json()
