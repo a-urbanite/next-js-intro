@@ -3,6 +3,7 @@ import styles from '../styles/Article.module.css'
 import Link from 'next/link'
 
 const Article = ({article}) => {
+  // console.log(context)
   return (
     <Link href={'/article/[id]'} as={`/article/${article.id}`}>
       <a className={styles.card}>
