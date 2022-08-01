@@ -14,7 +14,7 @@ const blog = ({articles}) => {
         fetched at build-time and provided to the page components as static props.
       </p>
       <p>
-        This means that after the build the site is completely static, needs no further connection to any web or server, meaning it runs entirely in the broswer, greatly reducing execution speed. 
+        This means that after the build the site is completely static, meaning it runs entirely in the broswer and needs no further server connection, greatly reducing execution speed. 
       </p>
       <div className={styles.grid}>
         {articles.map(article => 
